@@ -10,6 +10,6 @@ will make it even easier to deploy
 
 Run it like this:
 
-`./deploy.sh YouBucketName NameOfCloudFormation template.yml`
+`./deploy.sh YourS3BucketName NameOfCloudFormation template.yml`
 
 
