@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: Very simple example of how to upload a Lambda Function using Cloudformation
+
+Resources:
+  myLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+#      FunctionName: let cloudformation name the Lambda Function
+      Handler: index.handler
+      Runtime: nodejs4.3
+      CodeUri: lambda
+      MemorySize: 128
+      Timeout: 30
+      Policies:
+        - AWSLambdaBasicExecutionRole
